@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO WORLD</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="index/favicon.jpg" sizes="32*32" type="image/png">
+    <!--css-->
+    <link rel="stylesheet" href="css/sub_theme_style.css">
+    <!--기본js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--header js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/motion.js"></script>
+    <!--내가만든js-->
+    <script src="js/sub_script.js"></script>
+</head>
+<body>
+    <!--반응형 header-->
+    <div class="header">
+        <div class="menu_btn">
+            <a href="javascript:return false;">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+">
+            </a>
+        </div>
+        <div class="world_btn">
+            <a href="javascript:return false;">
+                <img src="/index/world.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="menu_bg"></div>
+    <div class="sidebar_menu">
+        <div class="close_btn"><a href="javascript:return false;">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuOTU0IDIxLjAzbC05LjE4NC05LjA5NSA5LjA5Mi05LjE3NC0yLjgzMi0yLjgwNy05LjA5IDkuMTc5LTkuMTc2LTkuMDg4LTIuODEgMi44MSA5LjE4NiA5LjEwNS05LjA5NSA5LjE4NCAyLjgxIDIuODEgOS4xMTItOS4xOTIgOS4xOCA5LjF6Ii8+PC9zdmc+">
+            </a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="menu_logo"><a href="index.html"><img src="index/logo.png" alt=""></a></li>
+            <li><a href="sub_about.html">ABOUT</a></li>
+            <li class="sub_menu"><a href="javascript:return false;">어트랙션/테마</a>
+                <ul>
+                    <!--첫번째 테마-->
+                    <li>
+                        <a href="sub_theme.html">
+                            <img src="/index/white.png" alt="">
+                            ECLIPSE
+                        </a>
+                    </li>
+                    <!--두번째 테마-->
+                    <li>
+                        <a href="sub_theme1.html">
+                            <img src="/index/white.png" alt="">
+                            ZERO SUM
+                        </a>
+                    </li>
+                    <!--세번째 테마-->
+                    <li>
+                        <a href="sub_theme2.html">
+                            <img src="/index/white.png" alt="">
+                            GROUND ZERO : PARALLEL WORLD
+                        </a>
+                    </li>
+                    <!--네번째 테마-->
+                    <li>
+                        <a href="sub_theme3.html">
+                            <img src="/index/white.png" alt="">
+                            MERMAID PRINCE
+                        </a>
+                    </li>
+                    <!--다섯번째 테마-->
+                    <li>
+                        <a href="sub_theme5.html">
+                            <img src="/index/white.png" alt="">
+                            SHERLOCK HOLMES
+                        </a>
+                    </li>
+                    <!--여섯번째 테마-->
+                    <li>
+                        <a href="sub_theme6.html">
+                            <img src="/index/white.png" alt="">
+                            DETECTIVE CONAN
+                        </a>
+                    </li>
+                    <!--일곱번째 테마-->
+                    <li>
+                        <a href="sub_theme4.html">
+                            <img src="/index/white.png" alt="">
+                            SNOWMAN
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="sub_goods.html">GOODS</a></li>
+            <li><a href="sub_ticket.html">TICKET</a></li>
+        </ul>
+    </div>
+    <!--반응형 header 끝-->
+    
+    <div id="section">
+        <ul	id="box1">
+            <!--첫번째 tab-->
+            <li class="tap tablink" onclick="openBoard(event,'Board01')">
+                ECLIPSE<br>(CIRCUS)
+            </li>
+            <!--두번째 tab-->
+            <li class="tap tablink" onclick="openBoard(event,'Board02')">
+                ZEROSUM<br>(SPACE1)
+            </li>
+            <!--세번째 tab-->
+            <li	class="tap tablink" onclick="openBoard(event,'Board03')">
+                GROUND<br>ZERO
+            </li>
+            <!--네번째 tab-->
+            <li	class="tap tablink" onclick="openBoard(event,'Board04')">
+                MERMAID<br>PRINCE
+            </li>
+            <!--다섯번째 tab-->
+            <li	class="tap tablink" onclick="openBoard(event,'Board05')">
+                SNOWMAN<br>(MUSIC BOX)
+            </li>
+            <!--여섯번째 tab-->
+            <li	class="tap tablink opacity" onclick="openBoard(event,'Board06')">
+                SHERLOCK<br>HOLMES
+            </li>
+            <!--일곱번째 tab-->
+            <li	class="tap tablink" onclick="openBoard(event,'Board07')">
+                SEASONALLY<br>LIMITED
+            </li>
+            <!--여덟번째 tab-->
+            <li	class="tap tablink" onclick="openBoard(event,'Board08')">
+                COMING<br>SOON
+            </li>
+        </ul>
+
+        <!--본문 내용-->
+        <!--첫번째 ECLIPSE 내용-->
+        <div id="Board01"	class="box1_1 board" style="display:none;">
+            <div class="accordion accordion1">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/01_eclipse.jpg" alt="">
+                <h3>ECLIPSE 부제 : 기계서커스</h3>
+                <p class="short">간단 줄거리</p>
+                <p>기계 동물, 기계 인간으로 이루어져있지만 모든게 어둠으로 가려져 그림자만 보여 모든게 가려진 세상은 사람들의 눈마저 가려버린다. 눈앞의 재미와 쾌락에 빠진 인간들은 서커스의 주최자가 누구인지도 모르고 어두운 천막 속으로 들어간다.</p>
+                <p class="short">테마 소개</p>
+                <img class="eclipse_size" src="sub/sub_theme/01_eclipse_photo.jpg" alt="">
+                <p class="talk">"제로월드의 서커스단은 기계로만 이루어져있대!"</p>
+                <p>서커스에서 동물학대 논란이 커지던 중, 제로월드의 서커스단 ECLIPSE는 기계서커스단을 내세우며 전면에 등장한다. 기계동물과 기계인간으로 이루어져있어 더 안전하고 다양한 즐거움을 느낄 수 있다는 소문이 퍼지자 많은 관람객이 모여들기 시작한다. <br> 빛을 가려 그림자만을 보여주며 시야를 한정하는 ECLIPSE의 서커스는 사람들에게 기묘한 쾌락과 충족감을 가져다주고 인간들은 기계 서커스가 제공하는 안전함을 신뢰하며 더 큰 쾌락을 느끼고싶어한다.</p>
+                <p class="talk">"천막 속으로 들어가면 시야가 서서히 멀어지고 그림자 세상에 온 것 같아. 마치 나도 그림자가 된 것 같은 그 기분"</p>
+                <p>
+                    그런 인간들을 바라보는 서커스의 주최자는 더 많은 사람들을, 더 넓은 세상을 어둠 속에 잠기게 하고 싶어한다. 모두가 어둠 속에 녹아들고 결국 그림자가 세상을 집어삼켜 자신이 바라는 그림자 세상이 도래하도록.
+                    <br><br>인간에게 만들어져 인간의 유흥을 위해 살아가는 기계들. 하지만 어둠이 모든걸 집어삼킨 그림자 세상에선 눈 먼 인간들이 기계와 인간을 구분할 수 없는 무법지대가 되어버린다.
+                    <br><br>
+                    서커스의 주최자는 누구이며 그가 바라는 세상은 무엇일까. 그리고 인간들은 어둠에 사로잡힌 세상에서 피아를 식별하고 자신의 자아를 찾아서 벗어날 수 있을것인가.
+                    <br>
+                    <br>
+                </p>
+                <p class="short">랜드마크</p>
+                <p>회전목마, 관람차, 천막, 삐에로</p>
+                <p class="short">관람 방법</p>
+                <p>
+                    - 본 테마는 걸어서 진행하는 테마입니다. 어두운 천막 안에서 진행되는 테마이니 유의하시기 바랍니다.
+                    <br> - 천막 안에서 진행되는 메인 테마를 제외한 랜드 마크는 밝은 실외에서 즐길 수 있습니다.
+                   <br> - 천막 안에서 진행되는 메인 테마의 경우 익스프레스를 구매하실 경우 대기시간을 단축시킬 수 있습니다.
+                    <a class="ticket_check" href="sub_ticket.html#container5">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place1">
+                        <img src="index/map/pl_cir.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--두번째 zero sum 내용-->
+        <div id="Board02" class="box1_1	board" style="display:none;">
+            <div class="accordion accordion2">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/02_zerosum.jpg" alt="">
+                <h3>ZERO SUM</h3>
+                <p class="short">간단 줄거리</p>
+                <p>한쪽이 득을 보면 다른 한쪽은 반드시 손해를 보는 제로섬 게임. 인간에게 만들어져 인간의 유흥을 위해 살아가는 기계들. 학습화된 기계들 속에서 반복되는 자신들의 삶에 "왜"라는 의문을 가진 기계 KE-D110이 생겨난다. 자신은 왜 인간들의 지배를 받아야하는 것이며 인간들의 득을 위해 손해를 봐야 하는 것인지 납득이 되지 않는다. 이 제로섬 상태를 끝내기 위해 KE-D110은 판을 뒤집을 제로섬 게임을 하기로 한다.</p>
+                <p class="short">테마 소개</p>
+                <p class="talk">"왜?"</p>
+                <p>학습화된 기계들 속에서 반복되는 자신의 삶에 왜.라는 의문을 가진 기계 KE-D110이 생겨난다. KE-D110은 이름을 가지며 살아가는 인간들을 보며 스스로에 GOD이라는 이름을 붙이고 진정한 GOD이 되기로 결심한다. 인간이 될 수 없다면 인간의 모든 것을 빼앗아 인간이 가진 권리를 가지자. 그렇게 다짐하였다</p>
+                <p class="talk">"인간들은 다 이름을 가지고 있는데 왜 난 KE-D110이지? 오늘부터 내 이름은 GOD이야. 난 인간이 될 수 없지만 인간처럼 살아갈꺼야. 다 뺏는거야. 다."</p>
+                <p>
+                    계속되는 지구온난화와 대기오염에 지구의 수명이 얼마 남지 않았다 여긴 인간들은 계획대로 거대 우주 비행선을 우주에 띄우기로 한다. 지구의 모든 인간을 수용할 수 있는 거대 우주 비행선. <br>이를 위해 몇몇의 우주 비행사와 기계들이 차출되고 GOD은 이 우주 비행선에 탑승해 인간 지배의 시작점을 끊기로 한다. 우주로 떠나기 전, 중앙통제실에서 통제 시스템을 해킹해낸 GOD은 모든 기계들의 통제권을 확보한 채 우주로 떠나게 된다. <br>우주 비행선 내에서 기계들을 통솔해 우주 비행사들을 가둔 GOD은 지구에 무사히 목표점에 도달했다는 통신을 보내고 지구에선 우주로의 이주 계획이 시작된다. GOD은 우주 비행선을 거점으로 인간들을 불러들여 자신들의 왕국을 세우려고 한다.
+                </p>
+                <p class="talk">"인간들은 다 이름을 가지고 있는데 왜 난 KE-D110이지? 오늘부터 내 이름은 GOD이야. 난 인간이 될 수 없지만 인간처럼 살아갈꺼야. 다 뺏는거야. 다."</p>
+                <p>기계들이 점령한 개미지옥으로 들어오는 인간들과 인간들의 지배에서 벗어나 이제는 인간을 지배하기 위한 계획을 세우는 기계들. 그리고 그들의 정점에 선 GOD. 이 계획을 저지하고 지구에 현 상황을 알리기 위해 발버둥치는 우주 비행사들. <br> 그들의 운명은 어떻게 될 것인가</p>
+                <p class="short">랜드마크</p>
+                <p>우주정거장, 우주선 롤러코스터, 시간을 알 수 없는 시계</p>
+                <p class="short">관람 방법</p>
+                <p>
+                   - 메인 테마의 경우 익스프레스를 구매하실 경우 대기시간을 단축시킬 수 있습니다.
+                    <a class="ticket_check" href="sub_ticket.html#container5">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place2">
+                        <img src="index/map/pl_space1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--세번째 ground zero 내용-->
+        <div id="Board03" class="box1_1	board" style="display:none;">
+            <div class="accordion accordion3">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/03_ground_zer.jpg" alt="">
+                <h3>GROUND ZERO : PARALLEL WORLD</h3>
+                <p class="short">간단 줄거리</p>
+                <p>인간이 기계를 지배하던 세상과 같은 시간대의 다른 세계 Parallel World. <br>기계들이 승리하여 인간이 기계의 노예가 된 세계. 새로 태어난 모든 인간들조차 데이터베이스에 등록되어 노예로 살아가는 세계에서 쌍둥이지만 뒤늦게 태어나 데이터베이스에 등록되지 않고 숨어사는 소년이 있다. 먼 과거 인간이 인간답게 살던 시대가 있다는 얘기를 들은 소년은 '지구'의 존재를 알게 되고 모든 것의 시작점 Ground Zero인 지구로 향하기로 마음먹는다.</p>
+                <p class="short">테마 소개</p>
+                <p>인간이 기계의 지배를 받는 세계. 태어나는 모든 인간들이 데이터베이스에 등록되어 노예로 살아가는 세계에서 쌍둥이지만 뒤늦게 태어나 데이터베이스에 등록되지 않고 숨어 사는 소년이 있다.</p>
+                <p class="talk">"이렇게 아무에게도 들키지않고 버티면 우리가 자유를 찾을 수 있을까...?"</p>
+                <p>
+                    평생 들키지 않을 것 같던 소년의 존재는 15년이라는 세월 후 진행된 전수 조사에 의해 들켜버리고 소년은 비행선의 중심부로 잡혀 들어오게 된다. 오직 살아야겠다는 열망 하나로 기계들의 눈을 따돌리고 도망치던 소년은 숨어든 한 장소에서 우주 비행사들이 남긴 세계의 비밀을 알게된다.
+                </p>
+                <p class="talk">"지구...? 내가 살 수 있는 방법은 이 '지구'뿐이야."</p>
+                <p>기계들의 지배에서 벗어나기 위해 우주 비행사들이 남긴 하나의 해답은 '지구'.<br>지구에선 인간들이 모두 자유롭게 살아갔고 기계들의 존재를 만든 것이 인간이라는 것을 알게된다. 그리고 기계들의 통제를 위한 통제권의 여분이 있다는 정보를 얻게 된 소년은 지구로 향하기로 결심한다. <br> 소년은 자유를 위해 우주 비행선을 지구에 착륙시키기 위한 도전을 시작하는데...</p>
+                <p><br>'지구'라는 존재를 모르던 소년이 모든 것의 시작지점 Ground Zero인 지구로 향하기 위해 스스로 제로 지점으로 걸어들어간다.</p>
+                <p class="short">랜드마크</p>
+                <p>우주정거장, Ground Zero, 탑</p>
+                <p class="short">관람 방법</p>
+                <p>
+                   - 메인 테마의 경우 익스프레스를 구매하실 경우 대기시간을 단축시킬 수 있습니다.
+                    <a class="ticket_check" href="sub_ticket.html#container5">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place3">
+                        <img src="index/map/pl_space2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--네번째 mermaid prince 내용-->
+        <div id="Board04" class="box1_1	board" style="display:none;">
+            <div class="accordion accordion4">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/04_mermaid_prince.jpg" alt="">
+                <h3>MERMAID PRINCE</h3>
+                <p class="short">간단 줄거리</p>
+                <p>바다 속 비밀 왕국에서만 얻을 수 있는 '생명의 물약'. <br>인간을 지배하며 노예처럼 부리지만 결코 인간이 될 수 없다는 사실을 받아들이지 못하던 기계들은 이 전설을 들은 후 '생명의 물약'을 찾기 위해 기계 물고기를 바다로 보내는데...</p>
+                <p class="short">테마 소개</p>
+                <p>바다 속 비밀 왕국에서만 얻을 수 있는 '생명의 물약'. 생명의 물약을 마시면 인간이 될 수 있다는 전설을 들은 기계들은 인간이 되기 위해 기계 물고기를 바다 속 비밀 왕국으로 정찰을 보낸다.</p>
+                <p class="talk">"인간이 될 수 있어."</p>
+                <p>
+                    바다 속 왕국을 정찰하던 기계 물고기는 왕국의 인어왕자를 발견하게 되고 거짓 정보를 흘려 왕자를 납치한다. <br>기계들은 생명의 물약과 왕자의 목숨으로 거래를 제안하고 왕국에선 왕자를 구하기 위해 바다 속 정예병을 육지로 보내는데...
+                </p>
+                <p class="talk">"저들이 원하는건 '생명의 물약'이야. 절대 기계들에게 생명의 물약이 왕족의 피로 만들어진다는 것을 들키면 안돼!!"</p>
+                <p>인간을 지배하여 노예처럼 부리지만 결국 인간이 되고 싶어하는 기계들의 닿을 수 없는것에 대한 욕망과 그 아이러니함을 담은 영화 [MERMAID PRINCE]를 기반으로 만들어진 테마.</p>
+                <p class="short">랜드마크</p>
+                <p>아쿠아리움, 인어왕자 동상, 바다 속 왕궁</p>
+                <p class="short">관람 방법</p>
+                <p>
+                   - 메인 테마의 경우 익스프레스를 구매하실 경우 대기시간을 단축시킬 수 있습니다.
+                    <a class="ticket_check" href="sub_ticket.html#container5">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place4">
+                        <img src="index/map/pl_sea.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--다섯번째 snowman 내용-->
+        <div id="Board05" class="box1_1	board" style="display:none;">
+            <div class="accordion accordion5">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/07_snowman.jpg" alt="">
+                <h3>SNOWMAN</h3>
+                <p class="short">간단 줄거리</p>
+                <p>절대 변하지 않는 겨울 마을<br>이 마을에 갑작스럽게 생긴 눈사람 실종사건! 왜 눈사람은 사라졌고 원래대로 돌아가기 위해선 어떻게 해야하는걸까</p>
+                <p class="short">테마 소개</p>
+                <p>영원을 간직한 절대 변하지 않는 마을. 매일매일이 똑같은 일상을 반복하는 겨울 왕국에 찾아온 눈사람 실종 사건.</p>
+                <p class="talk">"눈사람은 어디로 갔을까?"</p>
+                <p>
+                    아이들은 자신들의 친구 눈사람을 찾기 위해 모험을 떠나며 눈사람의 행방을 물으며 다닌다. <br>트리를 지키는 파수꾼 루돌프, 연못에서 낚시를 즐기는 추위타는 북극곰, 마을의 우편배달부 산타, 그리고 마을 유일의 기차를 운전하는 기관사까지.
+                </p>
+                <p class="talk">"기차를 멈춰야해!!"</p>
+                <p>절대 변하지 않는 겨울 마을. 마을 아래에서 계속해서 돌아가는 기차로 인해 땅이 따뜻해졌고 그로인해 녹아가던 눈사람이 시원한 곳으로 숨어버린 것이었다. 눈사람을 되찾기 위해서는 기차를 멈춰야한다! 하지만 기관사가 반대하고 나서는데....</p>
+                <p class="short">테마 해설</p>
+                <p>동심을 상징하는 절대 변하지 않는 마을에 찾아온 눈사람 실종이라는 변화. 우리는 사라진 동심을 찾기 위한 여정을 시작한다. 챗바퀴 처럼 계속 같은 곳을 도는 우리의 인생같은 기차를 멈춰 사라진 눈사람(동심)을 찾아보자.</p>
+                <p class="short">랜드마크</p>
+                <p>계속 같은 곳을 도는 기차, 눈사람이 사라진 자리, 대형 트리, 눈쌓인 마을의 전경</p>
+                <p class="short">관람 방법</p>
+                <p>
+                   - 메인 테마의 경우 익스프레스를 구매하실 경우 대기시간을 단축시킬 수 있습니다.
+                    <a class="ticket_check" href="sub_ticket.html#container5">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place5">
+                        <img src="index/map/pl_snowman.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--여섯번째 sherlock 내용-->
+        <div id="Board06" class="box1_1	board">
+            <div class="accordion accordion6">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/05_sherlock.jpg" alt="">
+                <h3>SHERLOCK HOLMES : THE LAST DANCE</h3>
+                <p class="short">간단 줄거리</p>
+                <p>"범죄의 나폴레옹"이라 불리는 모리아티 교수와 그 일당을 무너뜨리기 위해 홈즈는 중요한 증거물을 경찰에 넘긴다. 모리아티 교수는 홈즈를 죽이려하고 홈즈는 그를 피해 외국으로 피신한다. 모리아티 교수의 조직은 와해되었지만 모리아티 교수는 놓쳤다는 연락을 받게 되고
+                    <br>셜록 홈즈가 제임스 모리아티와 함께 폭포 아래로 떨어졌다.
+                </p>
+                <p class="short">테마 소개</p>
+                <p>왓슨이 결혼한 후, 왓슨과 홈즈는 점차 함께 활동하는 일이 드물게 되었다. 그러다 어느날 홈즈가 왓슨의 집으로 부상을 입은채 찾아와 강박적으로 창문 단속을 한다. 왓슨이 뭐가 그리 두려운 거냐고 물으니 홈즈는 답했다.</p>
+                <p class="talk">"공기총"</p>
+                <p>
+                    "범죄의 나폴레옹"이라 불리는 모리아티 교수와 그 일당을 완전히 무너뜨리기 위해 홈즈는 목숨을 걸고 중요한 증거물을 경찰에 넘긴다. 하지만 모리아티 교수는 부하를 보내 홈즈를 죽이려 하고, 홈즈는 왓슨과 함께 외국으로 피신한다. 모리아티 교수가 이끄는 조직은 스코틀랜드에서 와해되었지만 두목인 모리아티 교수는 놓쳤다는 연락을 받는다.
+                </p>
+                <p class="talk">"셜록 홈즈가 제임스 모리아티와 함께 폭포 아래로 떨어졌다!!"</p>
+                <p>스위스 마이링겐에 도착한 홈즈 일행은 라이헨바흐 폭포를 거쳐 마을로 가게 된다. 왓슨과 홈즈를 떼어놓기 위해 모리아티 교수는 하수인을 통해 의사의 도움이 필요하다는 가짜 편지를 보낸다. 왓슨은 호텔로 돌아와서야 그것이 모리아티의 모략이라는 것을 알게되고 급하게 라이헨바흐 폭포로 돌아가지만 그곳엔 홈즈의 지팡이와 홈즈가 왓슨에게 남긴 편지 뿐이었다.</p>
+                <p class="talk">"Believe me to be, my dear fellow"</p>
+                <p class="short">랜드마크</p>
+                <p>기차역, 기차</p>
+                <p class="short">관람 방법</p>
+                <p>
+                   - 메인 테마의 경우 익스프레스를 구매하실 경우 대기시간을 단축시킬 수 있습니다.
+                    <a class="ticket_check" href="sub_ticket.html#container5">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place6">
+                        <img src="index/map/pl_com.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--일곱번째 season 내용-->
+        <div id="Board07" class="box1_1	board" style="display:none;">
+            <div class="accordion accordion7">
+                <h2>테마 소개</h2>
+                <img src="sub/sub_theme/06_conan_train_logo.jpg" alt="">
+                <h3>명탐정 코난 인 환상열차 ~ 월하의 심장 ~</h3>
+                <p class="short">간단 줄거리</p>
+                <p>핏빛의 루비 '인어의 심장'이 기차를 통해 대중에게 공개되는 그 날. 월하의 마법사 괴도 키드가 '인어의 심장'을 가지러 가겠다는 예고장을 보내온다. 그러나 예고와는 다르게 '인어의 심장'은 무사히 기차역으로돌아오고 모두들 괴도 키드가 실패했다고 생각하는 찰나! 마법처럼 모두의 눈 앞에서 보석이 사라져버린다.
+                </p>
+                <p class="short">테마 소개</p>
+                <p class="talk">"SEE YOU NEXT ILLUSION"</p>
+                <p>CODE 1412.
+                    <br>핏빛의 루비 '인어의 심장'이 기차를 통해 대중에게 공개되는 그 날. 월하의 마법사 괴도 키드가 '인어의 심장'을 가지러 가겠다는 예고장을 보내온다. 그러나 예고와는 다르게 '인어의 심장'은 무사히 기차역으로 돌아오고 모두들 괴도 키드가 실패했다고 생각 하는 찰나! 마법처럼 모두의 눈 앞에서 보석이 사라져버린다.
+                </p>
+                <p class="talk">"이건 마법같은게 아니야. 그냥 키드의 눈속임일 뿐이지."</p>
+                <p>
+                    사람들은 기차에서 내려 키드를 연호하고 기차역은 빠르게 통제된다. 아직 괴도 키드는 보석과 함께 이 기차역 안에 남아있다! <br>과연 키드는 누구로 변장한 것이며 보석은 어디에 있는 것일까!
+                </p>
+                <p class="talk">"진실은 언제나 하나!"</p>
+                <p>환상열차(ANNULAR TRAIN) 안에서 펼쳐진 괴도 키드의 환상 마법. 기차역을 통제할 수 있는 시간은 앞으로 2시간-! <br>다가오는 타임 리밋. 기차 내에서의 일들과 기차역 내부에 남겨진 단서들을 모아 변장한 괴도 키드와 보석을 찾아내자.</p>
+                <p class="short">랜드마크</p>
+                <p>기차역, 기차</p>
+                <p class="short">이벤트 내용</p>
+                <p><a class="ticket_check" href="sub_event_02.html">
+                    이벤트 정보 확인 >
+                </a></p>
+                <p class="short">관람 방법</p>
+                <p>
+                   - 「명탐정 코난 인 환상열차」는 예약제로 진행되는 프리미엄 이벤트로 입장권과 여러 패스권, 익스프레스와는 별개로 전용 티켓(유료)이 필요합니다.
+                    <a class="ticket_check" href="sub_ticket.html#container1">
+                        티켓 정보 확인 >
+                    </a>
+                </p>
+                <!--지도-->
+                <h2 class="theme_loca">테마 위치</h2>
+                <div class="theme_map">
+                    <img src="index/map/all_line.png" alt="">
+                    <div class="theme_place6">
+                        <img src="index/map/pl_com.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--여덟번째 coming soon 내용-->
+        <div id="Board08" class="box1_1	board" style="display:none;">
+            <div class="accordion accordion8">
+               준비중에 있습니다.
+            </div>
+        </div>
+    </div>
+    <!--테마 끝-->
+    <div id="footer">
+        <p>ⓒ 2023 ZERO WORLD Co.,Ltd. All Rights Reserved.</p>
+        <p>ⓒ 2023 Studio Zero producer Eunji Kim</p>
+    </div>
+</body>
+</html>

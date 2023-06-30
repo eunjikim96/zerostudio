@@ -1,0 +1,1415 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #191919;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'S-CoreDream-3Light';
+    font-size: 16px;
+    line-height: 26px;
+    color: #191919;
+    background: url(../sub/sub_event/09_spring_bg.png) repeat;
+    background-size: contain;
+}
+
+/*body scroll custom*/
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 25%;
+    background: #cb1019;
+    background-clip: padding-box;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0e275e;
+    /*스크롤바 뒷 배경 색상*/
+}
+
+*[class] {
+    box-sizing: border-box;
+}
+
+/*s coredream 폰트*/
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*이사만루체*/
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.menu_btn {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.menu_btn img {
+    padding-top: 12px;
+}
+
+.header img {
+    display: block;
+    float: left;
+}
+
+.world_btn img {
+    margin-left: 15px;
+    padding-top: 7px;
+}
+
+/*header_btn 끝*/
+.menu_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 4;
+}
+
+.sidebar_menu {
+    display: none;
+    height: 100%;
+    background: #0e275e;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.close_btn {
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+}
+
+.close_btn>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_wrap {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu_wrap li {
+    padding: 15px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu_logo a img {
+    display: block;
+    max-width: 90%;
+}
+
+.menu_wrap li a {
+    display: block;
+    color: #fcc816;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu_wrap li a:hover {
+    color: #cb1019;
+}
+
+/*어트랙션/테마*/
+.sub_menu ul {
+    margin: 10px 0 5px;
+}
+
+.sub_menu li {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+
+.sub_menu li a {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.sub_menu li a img {
+    display: block;
+    float: left;
+    padding-right: 5px;
+}
+
+.sub_menu li a:hover {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .menu_bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar_menu {
+        width: 30%;
+    }
+
+    .sidebar_menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-thumb {
+        height: 10%;
+        background: #cb1019;
+        background-clip: padding-box;
+        border-radius: 50px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-track {
+        background: #eae8fe;
+        /*스크롤바 뒷 배경 색상*/
+    }
+}
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .menu_bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar_menu {
+        width: 50%;
+    }
+
+    .sidebar_menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-thumb {
+        height: 50%;
+        background: #cb1019;
+        background-clip: padding-box;
+        border-radius: 50px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-track {
+        background: #eae8fe;
+    }
+}
+
+/*mobile*/
+@media (max-width:699px) {
+    .sidebar_menu {
+        width: 100%;
+    }
+}
+
+/*header 끝*/
+
+/*banner*/
+#banner_warp {
+    max-width: 1920px;
+}
+
+#banner_wrap img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#banner_bar {
+    width: 100%;
+    background-color: #fcc816;
+}
+
+.event_title {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.event_title h1 {
+    font-family: 'GongGothicMedium';
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #banner_bar {
+        padding: 15px 0;
+        margin-bottom: 50px;
+    }
+}
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #banner_bar {
+        padding: 10px 0;
+        margin-bottom: 40px;
+    }
+
+    .event_title h1 {
+        padding-left: 20px;
+        font-size: 25px;
+    }
+}
+
+/*mobile*/
+@media (max-width:699px) {
+    #banner_bar {
+        margin-bottom: 30px;
+        padding: 4px 0;
+    }
+
+    .event_title h1 {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+}
+
+/*banner 끝*/
+
+/*section1*/
+#section1 {
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.logo_img img {
+    width: 100%;
+    display: block;
+}
+
+.event_story {
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+    box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.event_story h2 {
+    font-family: 'GongGothicMedium';
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #section1 {
+        max-width: 1320px;
+    }
+
+    .logo_img {
+        width: 30%;
+        float: left;
+    }
+
+    .event_story {
+        width: 67%;
+        float: right;
+        padding: 50px 50px 50px 30px;
+    }
+
+    .event_story h2 {
+        font-size: 24px;
+        font-family: 'GongGothicMedium';
+        padding-bottom: 20px;
+        line-height: 35px;
+    }
+
+    .story_enter {
+        padding: 30px 0 0;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #section1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo_img {
+        max-width: 30%;
+        float: left;
+        padding-top: 50px;
+    }
+
+    .event_story {
+        max-width: 67%;
+        float: right;
+        padding: 30px 40px 30px 20px;
+        font-size: 14px;
+    }
+
+    .event_story h2 {
+        font-size: 22px;
+        font-family: 'GongGothicMedium';
+        padding-bottom: 15px;
+        line-height: 30px;
+    }
+
+    .story_enter {
+        padding: 20px 0 0;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #section1 {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .logo_img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .event_story {
+        width: 100%;
+        margin-top: 20px;
+        padding: 25px 20px;
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .event_story h2 {
+        font-size: 20px;
+        font-family: 'GongGothicMedium';
+        padding-bottom: 12px;
+        line-height: 27px;
+    }
+
+    .story_enter {
+        padding: 15px 0 0;
+    }
+}
+
+/*section1 끝*/
+
+/*section2*/
+#section2_wrap {
+    box-sizing: border-box;
+}
+
+#section2_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+.section2 {
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.area1 {
+    line-height: 28px;
+}
+
+.area1 h3 {
+    font-family: 'GongGothicMedium';
+}
+
+.area1 table {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    border-collapse: collapse;
+}
+
+.yellow {
+    background-color: #FCF3DD !important;
+}
+
+.area1 table tr td {
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.table_bo {
+    border-bottom: 1px solid #707070;
+}
+
+.area1 table tr th {
+    font-weight: 900;
+    background-color: #f1f1f1;
+}
+
+.area1 a {
+    font-family: 'GongGothicMedium';
+    display: block;
+    color: #cb1019;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #section2_wrap {
+        max-width: 1320px;
+        margin: 100px auto;
+    }
+
+    #section2_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+
+    .section2 {
+        width: 90%;
+        margin: 25px 5%;
+        padding: 50px 30px;
+    }
+
+    .area1 {
+        line-height: 28px;
+    }
+
+    .area1 h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .area1 table {
+        margin: 20px 0;
+    }
+
+    .area1 a {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #section2_wrap {
+        width: 100%;
+        margin: 80px auto;
+        padding: 0 10px;
+    }
+
+    #section2_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+    }
+
+    .section2 {
+        width: 100%;
+        margin: 20px 0;
+        padding: 30px;
+    }
+
+    .area1 {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .area1 h3 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .area1 table {
+        margin: 15px 0;
+    }
+
+    .area1 a {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #section2_wrap {
+        width: 100%;
+        margin: 50px auto;
+        padding: 0 5px;
+    }
+
+    #section2_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    .section2 {
+        width: 100%;
+        margin: 15px 0 0;
+        padding: 25px 10px;
+    }
+
+    .area1 {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .area1 h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .area1 table {
+        margin: 15px 0;
+    }
+
+    .area1 a {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+/*section3*/
+.area2 {
+    width: 100%;
+}
+
+.area2 h3 {
+    font-family: 'GongGothicMedium';
+}
+
+.area2 table {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    border-collapse: collapse;
+}
+
+.area2 table tr td {
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.area2 table tr th {
+    font-weight: 900;
+    background-color: #f1f1f1;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.area2 a {
+    font-family: 'GongGothicMedium';
+    display: block;
+    color: #cb1019;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .area2 {
+        margin-top: 50px;
+        line-height: 28px;
+    }
+
+    .area2 h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .area2 table {
+        margin: 20px 0;
+    }
+
+    .area2 a {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .area2 {
+        margin-top: 40px;
+        line-height: 23px;
+        font-size: 14px;
+    }
+
+    .area2 h3 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .area2 table {
+        margin: 15px 0;
+    }
+
+    .area2 a {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    .area2 {
+        margin-top: 30px;
+        line-height: 21px;
+        font-size: 12px;
+    }
+
+    .area2 h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .area2 table {
+        margin: 15px 0;
+    }
+
+    .area2 a {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+/*area3*/
+.area3 {
+    width: 100%;
+}
+
+.area3 table {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    border-collapse: collapse;
+}
+
+.area3 table tr th {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.area3 table tr td {
+    background-color: #D0DDEE;
+}
+
+.tb_bold {
+    font-weight: bold;
+}
+
+.table_high {
+    border-bottom: 1px solid #707070;
+}
+
+.td_arrow {
+    background-color: #f1f1f1 !important;
+    position: relative;
+}
+
+.td_arrow i {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-top: 42px solid transparent;
+    border-bottom: 42px solid transparent;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .area3 {
+        margin-top: 50px;
+        line-height: 28px;
+    }
+
+    .area3 table tr td:nth-child(2) {
+        padding: 18px 0;
+    }
+
+    .table_high {
+        height: 84px;
+    }
+
+    .td_arrow i {
+        right: -35px;
+        border-left: 35px solid #f1f1f1;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .area3 {
+        margin-top: 40px;
+        line-height: 23px;
+        font-size: 14px;
+    }
+
+    .area3 table tr td:nth-child(2) {
+        padding: 15px 0;
+    }
+
+    .table_high {
+        height: 84px;
+    }
+
+    .td_arrow i {
+        right: -35px;
+        border-left: 35px solid #f1f1f1;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    .area3 {
+        margin-top: 30px;
+        line-height: 21px;
+        font-size: 12px;
+    }
+
+    .area3 table tr td:nth-child(2) {
+        padding: 15px 0;
+    }
+
+    .table_high {
+        height: 84px;
+    }
+
+    .td_arrow i {
+        right: -25px;
+        border-left: 25px solid #f1f1f1;
+    }
+
+    .td_small {
+        padding-left: 25px;
+    }
+}
+
+/*area4*/
+.area4 {
+    width: 100%;
+}
+
+.area4 h3 {
+    font-family: 'GongGothicMedium';
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .area4 {
+        margin-top: 50px;
+        line-height: 28px;
+    }
+
+    .area4 h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .area4 {
+        margin-top: 40px;
+        line-height: 23px;
+    }
+
+    .area4 h3 {
+        font-size: 22px;
+        padding-bottom: 18px;
+    }
+
+    .area4 p {
+        font-size: 14px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    .area4 {
+        margin-top: 30px;
+        line-height: 21px;
+    }
+
+    .area4 h3 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    .area4 p {
+        font-size: 12px;
+    }
+}
+
+/*section3*/
+#section3 {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#section3 h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+.singer {
+    display: block;
+}
+
+.story1 h3 {
+    font-family: 'GongGothicMedium';
+}
+
+/*라이브 지도*/
+.live_map {
+    box-sizing: border-box;
+    border: 3px solid #fcc816;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.live_map ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.live_map ul li img {
+    display: block;
+}
+
+.live_map ul li a {
+    display: block;
+    font-family: 'GongGothicMedium';
+    color: #cb1019;
+    background-color: #fcc816;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #section3 {
+        max-width: 1320px;
+    }
+
+    #section3 h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+
+    .singer {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .story1 {
+        margin: 40px 0 50px;
+    }
+
+    .story1 h3 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    /*라이브 지도*/
+    .live_map {
+        width: 70%;
+        margin: 30px auto;
+        padding: 30px 20px;
+    }
+
+    .live_map ul {
+        margin-top: 15px;
+    }
+    .live_map ul li {
+        float: left;
+        width: 50%;
+    }
+    .live_map ul li img {
+        width: 95%;
+        margin-right: 5%;
+    }
+    .live_map ul li a {
+        width: 50%;
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #section3 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #section3 h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+    }
+
+    .singer {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .story1 {
+        margin: 30px 0 40px;
+    }
+
+    .story1 p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .story1 h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    /*라이브 지도*/
+    .live_map {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px 20px;
+    }
+
+    .live_map ul {
+        margin-top: 13px;
+    }
+    .live_map ul li {
+        float: left;
+        width: 50%;
+    }
+    .live_map ul li img {
+        width: 95%;
+        margin-right: 5%;
+    }
+    .live_map ul li a {
+        width: 50%;
+        font-size: 18px;
+        margin-top: 18px;
+        padding: 8px 0;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #section3 {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    #section3 h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    .singer {
+        margin: 15px auto;
+        width: 100%;
+    }
+
+    .story1 {
+        margin: 20px 0 40px;
+    }
+
+    .story1 p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .story1 h3 {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    /*라이브 지도*/
+    .live_map {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .live_map ul {
+        margin-top: 10px;
+    }
+    .live_map ul li{
+        padding-bottom: 5px;
+    }
+    .live_map ul li img {
+        width: 100%;
+    }
+    .live_map ul li a {
+        width: 50%;
+        font-size: 16px;
+        margin-top: 15px;
+        padding: 6px 0;
+    }
+}
+
+/*기본정보 부터*/
+.bold{
+    font-weight: bold;
+}
+.art_list{
+    overflow: hidden;
+}
+.art_list li{
+    text-align: center;
+    font-weight: bold;
+}
+.art_list li img{
+    width: 100%;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .enter{
+        padding-top: 15px;
+    }
+    .artist{
+        margin: 40px 0;
+    }
+    .list_start{
+        margin-bottom: 10px;
+    }
+    .date_top{
+        margin-top: 30px;
+    }
+    .art_list{
+        width: 70%;
+        margin: 10px auto;
+    }
+    .art_list li{
+        float: left;
+        width: 47.5%;
+        margin-right: 5%;
+    }
+    .art_list li:nth-child(2){
+        margin-right: 0;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .enter{
+        padding-top: 15px;
+    }
+    .artist{
+        margin: 30px 0;
+    }
+    .list_start{
+        margin-bottom: 8px;
+    }
+    .date_top{
+        margin-top: 25px;
+    }
+    .art_list{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .art_list li{
+        float: left;
+        width: 47.5%;
+        margin-right: 5%;
+    }
+    .art_list li:nth-child(2){
+        margin-right: 0;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px){
+    .enter{
+        padding-top: 10px;
+    }
+    .artist{
+        margin: 25px 0 20px;
+    }
+    .list_start{
+        margin-bottom: 8px;
+    }
+    .date_top{
+        margin-top: 20px;
+    }
+    .art_list{
+        width: 100%;
+        margin: 5px auto;
+    }
+    .art_list li{
+        float: left;
+        width: 48.5%;
+        margin-right: 3%;
+    }
+    .art_list li:nth-child(2){
+        margin-right: 0;
+    }
+}
+
+/*map*/
+#map_wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#map_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+#map_wrap img {
+    display: block;
+    width: 100%;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #map_wrap {
+        max-width: 1320px;
+        margin-bottom: 100px;
+    }
+
+    #map_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #map_wrap {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    #map_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #map_wrap {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #map_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/*기타 이벤트 정보*/
+#etc_wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#etc_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+.etc_list {
+    width: 100%;
+}
+
+.etc_list li a {
+    display: block;
+    font-weight: bold;
+}
+
+.etc_list li a img {
+    display: block;
+    width: 100%;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #etc_wrap {
+        max-width: 1320px;
+        margin-bottom: 60px;
+    }
+
+    #etc_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .etc_list {
+        margin: 0 1%;
+    }
+
+    .etc_list li {
+        float: left;
+        width: 23.75%;
+        margin-right: 1%;
+        margin-bottom: 40px;
+    }
+
+    .etc_list li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .etc_list li a p {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #etc_wrap {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    #etc_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .etc_list li {
+        float: left;
+        width: 32%;
+        margin-bottom: 25px;
+    }
+
+    .etc_list li:nth-child(2),
+    .etc_list li:nth-child(5) {
+        margin: 0 2%;
+    }
+
+    .etc_list li a p {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #etc_wrap {
+        width: 100%;
+        padding: 0 5px;
+        margin-bottom: 30px;
+    }
+
+    #etc_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .etc_list li {
+        float: left;
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    .etc_list li:nth-child(1),
+    .etc_list li:nth-child(3),
+    .etc_list li:nth-child(5) {
+        margin-right: 2%;
+    }
+
+    .etc_list li a p {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 40px;
+        text-align: center;
+        font-size: 9px;
+        line-height: 15px;
+    }
+}

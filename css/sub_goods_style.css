@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #191919;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'S-CoreDream-3Light';
+    font-size: 16px;
+    line-height: 26px;
+    color: #191919;
+}
+
+/*body scroll custom*/
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 25%;
+    background: #cb1019;
+    background-clip: padding-box;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0e275e;
+    /*스크롤바 뒷 배경 색상*/
+}
+
+*[class] {
+    box-sizing: border-box;
+}
+
+/*s coredream 폰트*/
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*이사만루체*/
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.menu_btn {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.menu_btn img {
+    padding-top: 12px;
+}
+
+.header img {
+    display: block;
+    float: left;
+}
+
+.world_btn img {
+    margin-left: 15px;
+    padding-top: 7px;
+}
+
+/*header_btn 끝*/
+.menu_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 4;
+}
+
+.sidebar_menu {
+    display: none;
+    height: 100%;
+    background: #0e275e;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.close_btn {
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+}
+
+.close_btn>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_wrap {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu_wrap li {
+    padding: 15px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu_logo a img {
+    display: block;
+    max-width: 90%;
+}
+
+.menu_wrap li a {
+    display: block;
+    color: #fcc816;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu_wrap li a:hover {
+    color: #cb1019;
+}
+
+/*어트랙션/테마*/
+.sub_menu ul {
+    margin: 10px 0 5px;
+}
+
+.sub_menu li {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+
+.sub_menu li a {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.sub_menu li a img {
+    display: block;
+    float: left;
+    padding-right: 5px;
+}
+
+.sub_menu li a:hover {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .menu_bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar_menu {
+        width: 30%;
+    }
+
+    .sidebar_menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-thumb {
+        height: 10%;
+        background: #cb1019;
+        background-clip: padding-box;
+        border-radius: 50px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-track {
+        background: #eae8fe;
+        /*스크롤바 뒷 배경 색상*/
+    }
+}
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .menu_bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar_menu {
+        width: 50%;
+    }
+
+    .sidebar_menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-thumb {
+        height: 50%;
+        background: #cb1019;
+        background-clip: padding-box;
+        border-radius: 50px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-track {
+        background: #eae8fe;
+    }
+}
+
+/*mobile*/
+@media (max-width:699px) {
+    .sidebar_menu {
+        width: 100%;
+    }
+}
+
+/*header 끝*/
+
+/*제로월드 굿즈*/
+#goods{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#goods h1{
+    text-align: center;
+}
+#goods h2{
+    font-family: 'GongGothicMedium';
+}
+.goods1{
+    width: 100%;
+    overflow: hidden;
+}
+.goods1 li{
+    cursor: pointer;
+}
+.goods1 li img{
+    display: block;
+    width: 100%;
+}
+.goods1 li p{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*pc*/
+@media (min-width:1000px) {
+    #goods{
+        max-width: 1320px;
+        margin: 50px auto;
+    }
+    #goods h1{
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+    #goods h2{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .goods1 li{
+        float: left;
+        width: 32%;
+        margin-bottom: 40px;
+    }
+    .goods1 li:nth-child(2), .goods1 li:nth-child(5){
+        margin: 0 2%;
+    }
+    .goods1 li p{
+        margin-top: 10px;
+    }
+    .top{
+        margin-top: 40px;
+        line-height: 33px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #goods{
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+    #goods h1{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    #goods h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .goods1 li{
+        float: left;
+        width: 32%;
+        margin-bottom: 25px;
+    }
+    .goods1 li:nth-child(2), .goods1 li:nth-child(5){
+        margin: 0 2%;
+    }
+    .goods1 li p{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .top{
+        margin-top: 40px;
+        line-height: 32px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px){
+    #goods{
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 5px;
+    }
+    #goods h1{
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    #goods h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .goods1 li{
+        float: left;
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    .goods1 li:nth-child(1), .goods1 li:nth-child(3), .goods1 li:nth-child(5){
+        margin-right: 2%;
+    }
+    .goods1 li p{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .top{
+        margin-top: 30px;
+        line-height: 28px;
+    }
+}
+
+/*footer*/
+/*pc*/
+@media (min-width:1000px) {
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px){
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 40px;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 9px;
+    }
+}

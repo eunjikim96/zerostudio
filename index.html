@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO WORLD</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="index/favicon.jpg" sizes="32*32" type="image/png">
+    <!--css-->
+    <link rel="stylesheet" href="css/main_style.css">
+    <!--기본js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--header js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/motion.js"></script>
+    <!--내가만든js-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--반응형 header-->
+    <div class="header">
+        <div class="menu_btn">
+            <a href="javascript:return false;">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+">
+            </a>
+        </div>
+        <div class="world_btn">
+            <a href="javascript:return false;">
+                <img src="/index/world.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="menu_bg"></div>
+    <div class="sidebar_menu">
+        <div class="close_btn"><a href="javascript:return false;">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuOTU0IDIxLjAzbC05LjE4NC05LjA5NSA5LjA5Mi05LjE3NC0yLjgzMi0yLjgwNy05LjA5IDkuMTc5LTkuMTc2LTkuMDg4LTIuODEgMi44MSA5LjE4NiA5LjEwNS05LjA5NSA5LjE4NCAyLjgxIDIuODEgOS4xMTItOS4xOTIgOS4xOCA5LjF6Ii8+PC9zdmc+">
+            </a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="menu_logo"><a href="index.html"><img src="index/logo.png" alt=""></a></li>
+            <li><a href="sub_about.html">ABOUT</a></li>
+            <li class="sub_menu"><a href="javascript:return false;">어트랙션/테마</a>
+                <ul>
+                    <!--첫번째 테마-->
+                    <li>
+                        <a href="sub_theme.html">
+                            <img src="/index/white.png" alt="">
+                            ECLIPSE
+                        </a>
+                    </li>
+                    <!--두번째 테마-->
+                    <li>
+                        <a href="sub_theme1.html">
+                            <img src="/index/white.png" alt="">
+                            ZERO SUM
+                        </a>
+                    </li>
+                    <!--세번째 테마-->
+                    <li>
+                        <a href="sub_theme2.html">
+                            <img src="/index/white.png" alt="">
+                            GROUND ZERO : PARALLEL WORLD
+                        </a>
+                    </li>
+                    <!--네번째 테마-->
+                    <li>
+                        <a href="sub_theme3.html">
+                            <img src="/index/white.png" alt="">
+                            MERMAID PRINCE
+                        </a>
+                    </li>
+                    <!--다섯번째 테마-->
+                    <li>
+                        <a href="sub_theme5.html">
+                            <img src="/index/white.png" alt="">
+                            SHERLOCK HOLMES
+                        </a>
+                    </li>
+                    <!--여섯번째 테마-->
+                    <li>
+                        <a href="sub_theme6.html">
+                            <img src="/index/white.png" alt="">
+                            DETECTIVE CONAN
+                        </a>
+                    </li>
+                    <!--일곱번째 테마-->
+                    <li>
+                        <a href="sub_theme4.html">
+                            <img src="/index/white.png" alt="">
+                            SNOWMAN
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="sub_goods.html">GOODS</a></li>
+            <li><a href="sub_ticket.html">TICKET</a></li>
+        </ul>
+    </div>
+    <!--반응형 header 끝-->
+    <div id="map_wrap">
+        <!--지도 line-->
+        <div class="line">
+            <img src="index/map/map_line.png" alt="">
+        </div>
+        <!--base1-->
+        <div class="base1">
+            <img src="index/map/base_beige.png" alt="">
+        </div>
+        <!--base2-->
+        <div class="base2">
+            <img src="index/map/base_green_left.png" alt="">
+        </div>
+        <!--base3-->
+        <div class="base3">
+            <img src="index/map/base_green_right.png" alt="">
+        </div>
+        <!--base4-->
+        <div class="base4">
+            <img src="index/map/base_lightgreen.png" alt="">
+        </div>
+        <!--base5-->
+        <div class="base5">
+            <img src="index/map/base_etc.png" alt="">
+        </div>
+
+        <!--나무1 왼쪽위-->
+        <div class="tree1">
+            <img src="index/map/tree_lefttop.png" alt="">
+        </div>
+        <!--나무2 왼쪽아래-->
+        <div class="tree2">
+            <img src="index/map/tree_leftbottom.png" alt="">
+        </div>
+        <!--나무3 오른쪽위-->
+        <div class="tree3">
+            <img src="index/map/tree_righttop.png" alt="">
+        </div>
+        <!--나무4 오른쪽아래-->
+        <div class="tree4">
+            <img src="index/map/tree_rightbottom.png" alt="">
+        </div>
+        <!--나무5 왼쪽 벚꽃-->
+        <div class="tree5">
+            <img src="index/map/tree_blossom.png" alt="">
+        </div>
+        <!--나무5 가운데 벚꽃-->
+        <div class="tree6">
+            <img src="index/map/tree_blossom2.png" alt="">
+        </div>
+        <!--color all-->
+        <div class="tree_all">
+            <img src="index/map/color.png" alt="">
+        </div>
+        <!--logo-->
+        <div class="logo">
+            <img src="index/map/zero_logo.png" alt="">
+        </div>
+
+        <!--서커스-->
+        <div class="circus">
+            <a href="sub_theme.html">
+                <img src="index/map/place_circus.png" alt="">
+            </a>
+        </div>
+        <!--우주1-->
+        <div class="zerosum">
+            <a href="sub_theme1.html">
+                <img src="index/map/place_zerosum.png" alt="">
+            </a>
+        </div>
+        <!--우주2-->
+        <div class="groundzero">
+            <a href="sub_theme2.html">
+                <img src="index/map/place_groundzero.png" alt="">
+            </a>
+        </div>
+        <!--바다-->
+        <div class="sea">
+            <a href="sub_theme3.html">
+                <img src="index/map/place_sea.png" alt="">
+            </a>
+        </div>
+        <!--기차-->
+        <div class="train">
+            <a href="sub_theme5.html">
+                <img src="index/map/place_train.png" alt="">
+            </a>
+        </div>
+        <!--오르골-->
+        <div class="snowman">
+            <a href="sub_theme4.html">
+                <img src="index/map/place_snowman.png" alt="">
+            </a>
+        </div>
+        <!--호수-->
+        <div class="lake">
+            <img src="index/map/place_lake.png" alt="">
+        </div>
+
+        <!--zelly-->
+        <div class="zelly z4">
+            <img src="index/map/pl_mouse.png" alt="">
+            <img class="ring" src="index/zelly.png" alt="">
+        </div>
+        <div class="zelly z5">
+            <div class="basic">
+                <img src="index/map/pl_mouse.png" alt="">
+            </div>
+            <!--우주1-->
+            <div class="p1">
+                <img src="index/map/pl_space1.png" alt="">
+            </div>
+            <!--우주2-->
+            <div class="p2">
+                <img src="index/map/pl_space2.png" alt="">
+            </div>
+            <!--서커스-->
+            <div class="p3">
+                <img src="index/map/pl_cir.png" alt="">
+            </div>
+            <!--바다-->
+            <div class="p4">
+                <img src="index/map/pl_sea.png" alt="">
+            </div>
+            <!--오르골-->
+            <div class="p5">
+                <img src="index/map/pl_snowman.png" alt="">
+            </div>
+            <!--기차-->
+            <div class="p6">
+                <img src="index/map/pl_com.png" alt="">
+            </div>
+            <img class="ring" src="index/zelly.png" alt="">
+        </div>
+        <div class="zelly z6">
+            <a href="sub_ticket.html">
+                <img src="index/map/pl_ticket.png" alt="">
+                <img class="ring" src="index/zelly.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--map_wrap 끝-->
+
+    <div id="main_intro">
+        <div class="intro_wrap">
+            <p class="text">
+                제로월드는 다양한 영화들을
+                기반으로 구성된 테마파크입니다. <br> 같지만 다른 다양한 세계관을 공유하고 있으며, <br> 결국 모든 세계는 하나로 이어져 있고 한 지점에서 만나게 될 것이라는 의미를 지니고
+                있습니다. <br>
+                나무에 둘러쌓인 제로월드를 걸으며 다양한 테마들을 경험하고 비밀을 발견해보세요. <br> 제로월드에 숨겨진 다양한 ZERO들을 찾는 재미도 놓치지 마세요! <br> 우리는 결국 한
+                지점에서 만나게 될거에요.<br>
+            </p>
+            <p class="btn">
+                <a href="sub_about.html">더보기</a>
+            </p>
+            <figure class="zelly z1">
+                <img src="index/zelly.png" alt="">
+            </figure>
+            <figure class="zelly z2">
+                <img src="index/zelly.png" alt="">
+            </figure>
+            <figure class="zelly z3">
+                <img src="index/zelly.png" alt="">
+            </figure>
+        </div>
+    </div>
+    <!--중간소개 끝-->
+    <!--이벤트-->
+    <div id="event_bg">
+        <div class="event_list">
+            <h1>이벤트</h1>
+            <ul class="event_dt">
+                <!--첫번째 이벤트-->
+                <li>
+                    <a href="sub_event_01.html">
+                        <img src="index/event _conan.jpg" alt="">
+                        <div class="event_text">
+                            <p>명탐정 코난 월드<br><br></p>
+                            <p>2023.03.01 - 08.06</p>
+                        </div>
+                    </a>
+                </li>
+                <!--두번째 이벤트-->
+                <li>
+                    <a href="sub_event_11.html">
+                        <img src="index/event _patient.jpg" alt="">
+                        <div class="event_text">
+                            <p>PARALLEL WORLD:
+                                <br>PATIENT ZERO
+                            </p>
+                            <p>2023.05.10 - 09.17</p>
+                        </div>
+                    </a>
+                </li>
+                <!--세번째 이벤트-->
+                <li>
+                    <a href="sub_event_05.html">
+                        <img src="index/event _dragonball.jpg" alt="">
+                        <div class="event_text">
+                            <p>드래곤볼 월드<br><br></p>
+                            <p>2023.04.05 - 09.09</p>
+                        </div>
+                    </a>
+                </li>
+                <!--네번째 이벤트-->
+                <li>
+                    <a href="sub_event_10.html">
+                        <img src="index/event _night_tour.jpg" alt="">
+                        <div class="event_text">
+                            <p>ZERO WORLD
+                                <br>NIGHT TOUR
+                            </p>
+                            <p>2023.05.10 - 09.17</p>
+                        </div>
+                    </a>
+                </li>
+                <!--다섯번째 이벤트-->
+                <li>
+                    <a href="sub_event_08.html">
+                        <img src="index/event _circus.jpg" alt="">
+                        <div class="event_text">
+                            <p>ECLIPSE:
+                                <br>NIGHT CIRCUS
+                            </p>
+                            <p>2023.05.10 - 09.17</p>
+                        </div>
+                    </a>
+                </li>
+                <!--여섯번째 이벤트-->
+                <li>
+                    <a href="sub_event_09.html">
+                        <img src="index/event _zero_blossom.jpg" alt="">
+                        <div class="event_text">
+                            <p>ZERO BLOSSOM <br><br></p>
+                            <p>2023.03.01 - 05.03</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--이벤트 끝-->
+    <!--알림-->
+    <div id="notice_wrap">
+        <div class="notice">
+            <h1><span class="notice_bg">NOTICE</span></h1>
+            <ul class="notice_main">
+                <!--첫번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.06.30
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">점검에 따른 제로월드 어트랙션 중단 안내</span>
+                    </a>
+                </li>
+                <!--두번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.01
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">ZERO WORLD SUMMER EVENT 공지</span>
+                    </a>
+                </li>
+                <!--세번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.03
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">HOT SUMMER DIVING IN ZERO WORLD</span>
+                    </a>
+                </li>
+                <!--네번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.03
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">제로월드 WITH ONEPIECE!!!</span>
+                    </a>
+                </li>
+                <!--다섯번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.05
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">NEW THEME 공개 안내 일정</span>
+                    </a>
+                </li>
+                <!--여섯번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.05
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">티켓 재판매, 양도 불가에 대한 안내</span>
+                    </a>
+                </li>
+                <!--일곱번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.07
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">제로월드 굿즈 재고 문의에 대한 안내사항</span>
+                    </a>
+                </li>
+                <!--여덟번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.07.09
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">여름 성수기 제로월드 교통편 안내. 주차 시 고려사항 안내</span>
+                    </a>
+                </li>
+                <!--아홉번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.08.05
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">8월 어트랙션 운휴 안내</span>
+                    </a>
+                </li>
+                <!--열번째 공지-->
+                <li>
+                    <a href="javascript:return false;" class="lines">
+                        <span class="date">
+                            2023.08.30
+                        </span>
+                        <span class="cat"> NEWS</span>
+                        <span class="title">셜록 홈즈 Next Season!! 셜록 홈즈의 귀환</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--알림 끝-->
+    <div id="footer">
+        <p>ⓒ 2023 ZERO WORLD Co.,Ltd. All Rights Reserved.</p>
+        <p>ⓒ 2023 Studio Zero producer Eunji Kim</p>
+    </div>
+</body>
+
+</html>

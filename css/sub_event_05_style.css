@@ -1,0 +1,1196 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #191919;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'S-CoreDream-3Light';
+    font-size: 16px;
+    line-height: 26px;
+    color: #191919;
+}
+
+/*body scroll custom*/
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 25%;
+    background: #cb1019;
+    background-clip: padding-box;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0e275e;
+    /*스크롤바 뒷 배경 색상*/
+}
+
+*[class] {
+    box-sizing: border-box;
+}
+
+/*s coredream 폰트*/
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*이사만루체*/
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.menu_btn {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.menu_btn img {
+    padding-top: 12px;
+}
+
+.header img {
+    display: block;
+    float: left;
+}
+
+.world_btn img {
+    margin-left: 15px;
+    padding-top: 7px;
+}
+
+/*header_btn 끝*/
+.menu_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 4;
+}
+
+.sidebar_menu {
+    display: none;
+    height: 100%;
+    background: #0e275e;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.close_btn {
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+}
+
+.close_btn>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_wrap {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu_wrap li {
+    padding: 15px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu_logo a img {
+    display: block;
+    max-width: 90%;
+}
+
+.menu_wrap li a {
+    display: block;
+    color: #fcc816;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu_wrap li a:hover {
+    color: #cb1019;
+}
+
+/*어트랙션/테마*/
+.sub_menu ul {
+    margin: 10px 0 5px;
+}
+
+.sub_menu li {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+
+.sub_menu li a {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.sub_menu li a img {
+    display: block;
+    float: left;
+    padding-right: 5px;
+}
+
+.sub_menu li a:hover {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    .menu_bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar_menu {
+        width: 30%;
+    }
+
+    .sidebar_menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-thumb {
+        height: 10%;
+        background: #cb1019;
+        background-clip: padding-box;
+        border-radius: 50px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-track {
+        background: #eae8fe;
+        /*스크롤바 뒷 배경 색상*/
+    }
+}
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    .menu_bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar_menu {
+        width: 50%;
+    }
+
+    .sidebar_menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-thumb {
+        height: 50%;
+        background: #cb1019;
+        background-clip: padding-box;
+        border-radius: 50px;
+    }
+
+    .sidebar_menu::-webkit-scrollbar-track {
+        background: #eae8fe;
+    }
+}
+
+/*mobile*/
+@media (max-width:699px) {
+    .sidebar_menu {
+        width: 100%;
+    }
+}
+
+/*header 끝*/
+
+/*banner*/
+#banner_warp {
+    max-width: 1920px;
+}
+
+#banner_wrap img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#banner_bar {
+    width: 100%;
+    background-color: #fcc816;
+}
+
+.event_title {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.event_title h1 {
+    font-family: 'GongGothicMedium';
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #banner_bar {
+        padding: 15px 0;
+        margin-bottom: 50px;
+    }
+}
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #banner_bar {
+        padding: 10px 0;
+        margin-bottom: 40px;
+    }
+
+    .event_title h1 {
+        padding-left: 20px;
+        font-size: 25px;
+    }
+}
+
+/*mobile*/
+@media (max-width:699px) {
+    #banner_bar {
+        margin-bottom: 30px;
+        padding: 4px 0;
+    }
+
+    .event_title h1 {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+}
+
+/*banner 끝*/
+
+/*section1*/
+#section1 {
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.logo_img img {
+    width: 100%;
+    display: block;
+}
+
+.event_story {
+    background-color: rgba(0, 0, 0, 0.02);
+    box-sizing: border-box;
+    box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.event_story h2 {
+    font-family: 'GongGothicMedium';
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #section1 {
+        max-width: 1320px;
+    }
+
+    .logo_img {
+        max-width: 30%;
+        float: left;
+        padding-top: 50px;
+    }
+
+    .event_story {
+        max-width: 67%;
+        float: right;
+        padding: 30px 50px 30px 30px;
+    }
+
+    .event_story h2 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .story_enter {
+        padding: 15px 0;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #section1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo_img {
+        max-width: 31%;
+        float: left;
+        padding-top: 50px;
+    }
+
+    .event_story {
+        max-width: 67%;
+        float: right;
+        padding: 30px 40px 30px 30px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .event_story h2 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .story_enter {
+        padding: 12px 0;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #section1 {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .logo_img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .event_story {
+        width: 100%;
+        margin-top: 20px;
+        padding: 30px 20px;
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .event_story h2 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .story_enter {
+        padding: 12px 0;
+    }
+}
+
+/*section1 끝*/
+
+/*event_detail*/
+#event_list {
+    margin: 80px auto;
+    box-sizing: border-box;
+}
+
+#event_list h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+.section2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section2 li a {
+    width: 100%;
+    display: block;
+}
+
+.event_img img {
+    width: 100%;
+    display: block;
+}
+
+.detail_title {
+    font-weight: bold;
+}
+
+.detail_red {
+    font-weight: 900;
+    color: red;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #event_list {
+        max-width: 1320px;
+        margin: 80px auto;
+    }
+
+    #event_list h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section2 li {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 25px;
+    }
+
+    .section2 li:nth-child(2),
+    .section2 li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .event_img {
+        width: 50%;
+        float: left;
+    }
+
+    .event_detail {
+        width: 50%;
+        float: left;
+        padding-left: 25px;
+    }
+
+    .detail_title {
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 20px;
+    }
+
+    .detail_red {
+        padding-top: 30px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #event_list {
+        width: 100%;
+        margin: 60px auto;
+        padding: 0 10px;
+    }
+
+    #event_list h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .section2 li {
+        width: 49%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .event_img {
+        width: 40%;
+        float: left;
+    }
+
+    .event_detail {
+        width: 60%;
+        float: left;
+        padding-left: 10px;
+    }
+
+    .detail_title {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .detail_red {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #event_list {
+        width: 100%;
+        margin: 50px auto;
+        padding: 0 5px;
+    }
+
+    #event_list h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .section2 li {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .section2 li:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    .event_img {
+        width: 45%;
+        float: left;
+    }
+
+    .event_detail {
+        width: 55%;
+        float: left;
+        padding-left: 12px;
+    }
+
+    .detail_title {
+        font-size: 12px;
+        line-height: 21px;
+        padding-top: 10px;
+    }
+
+    .detail_red {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}
+
+/*section2 event list 끝*/
+
+/*드래곤볼 소개 tab*/
+#section {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#box1 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+#box1>li {
+    display: inline-block;
+    text-align: center;
+}
+
+.tap {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#box1>li.on>.box1_1 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box1_1 {
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.accordion1 {
+    cursor: default;
+}
+
+.accordion1 h2 {
+    font-weight: bold;
+}
+
+.accordion1 a {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #section {
+        max-width: 1320px;
+        margin-bottom: 100px;
+    }
+
+    .tap {
+        width: 20%;
+        padding: 10px;
+    }
+
+    .box1_1 {
+        max-width: 1320px;
+        padding: 60px 70px;
+    }
+
+    .accordion1 h2 {
+        font-size: 24px;
+        padding-bottom: 35px;
+    }
+
+    .accordion1 a {
+        padding-top: 30px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #section {
+        width: 100%;
+        padding: 0px 10px;
+        margin-bottom: 70px;
+    }
+
+    .tap {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .box1_1 {
+        max-width: 1320px;
+        padding: 50px 40px 60px;
+    }
+
+    .accordion1 h2 {
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    .accordion1 p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .accordion1 a {
+        padding-top: 25px;
+        font-size: 14px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #section {
+        width: 100%;
+        padding: 0px 5px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+
+    .tap {
+        width: 35%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .box1_1 {
+        max-width: 1320px;
+        padding: 40px 40px 50px;
+    }
+
+    .accordion1 h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .accordion1 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .accordion1 a {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+}
+
+/*드래곤볼 소개 끝*/
+#ticket_wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#ticket_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+.ticket_box {
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 3px solid #fcc816;
+}
+
+.ticket_box h3 {
+    font-family: 'GongGothicMedium';
+}
+
+.ticket_box a {
+    display: block;
+    color: #cb1019;
+    font-family: 'GongGothicMedium';
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #ticket_wrap {
+        max-width: 1320px;
+        margin-bottom: 80px;
+    }
+
+    #ticket_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .ticket_box {
+        max-width: 800px;
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .ticket_box h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .ticket_box a {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #ticket_wrap {
+        width: 100%;
+        margin-bottom: 60px;
+        padding: 0 10px;
+    }
+
+    #ticket_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #ticket_wrap p {
+        font-size: 14px;
+    }
+
+    .ticket_box {
+        width: 100%;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .ticket_box h3 {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    .ticket_box p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .ticket_box a {
+        font-size: 18px;
+        padding-top: 17px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #ticket_wrap {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 5px;
+    }
+
+    #ticket_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    #ticket_wrap p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .ticket_box {
+        width: 100%;
+        padding: 25px;
+        margin-top: 15px;
+    }
+
+    .ticket_box h3 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    .ticket_box p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .ticket_box a {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+}
+
+/*ticket box 끝*/
+
+/*이벤트 공지*/
+#photo_wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#photo_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+#photo_wrap p {
+    font-weight: bold;
+}
+
+#photo_wrap img{
+    display: block;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #photo_wrap {
+        max-width: 1320px;
+        margin-bottom: 80px;
+    }
+
+    #photo_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    #photo_wrap p {
+        padding-bottom: 30px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #photo_wrap {
+        width: 100%;
+        margin-bottom: 60px;
+        padding: 0 10px;
+    }
+
+    #photo_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #photo_wrap p {
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+}
+
+/*mobile*/
+@media (max-width:699px) {
+    #photo_wrap {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 5px;
+    }
+
+    #photo_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    #photo_wrap p {
+        padding-bottom: 20px;
+        font-size: 12px;
+        line-height: 21px;
+    }
+    #photo_wrap img{
+        margin: 0 auto;
+    }
+}
+
+
+/*map*/
+#map_wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#map_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+#map_wrap img {
+    display: block;
+    width: 100%;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #map_wrap {
+        max-width: 1320px;
+        margin-bottom: 100px;
+    }
+
+    #map_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #map_wrap {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 60px;
+    }
+
+    #map_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #map_wrap {
+        width: 100%;
+        padding: 0 5px;
+        margin-bottom: 50px;
+    }
+
+    #map_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/*기타 이벤트 정보*/
+#etc_wrap {
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#etc_wrap h2 {
+    font-family: 'GongGothicMedium';
+    border-bottom: 1px solid #191919;
+}
+
+.etc_list {
+    width: 100%;
+}
+
+.etc_list li a {
+    display: block;
+    font-weight: bold;
+}
+
+.etc_list li a img {
+    display: block;
+    width: 100%;
+}
+
+/*pc*/
+@media (min-width:1000px) {
+    #etc_wrap {
+        max-width: 1320px;
+        margin-bottom: 60px;
+    }
+
+    #etc_wrap h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .etc_list {
+        margin: 0 1%;
+    }
+
+    .etc_list li {
+        float: left;
+        width: 23.75%;
+        margin-right: 1%;
+        margin-bottom: 40px;
+    }
+
+    .etc_list li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .etc_list li a p {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+/*tablet*/
+@media (min-width:700px) and (max-width:999px) {
+    #etc_wrap {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    #etc_wrap h2 {
+        font-size: 22px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .etc_list li {
+        float: left;
+        width: 32%;
+        margin-bottom: 25px;
+    }
+
+    .etc_list li:nth-child(2),
+    .etc_list li:nth-child(5) {
+        margin: 0 2%;
+    }
+
+    .etc_list li a p {
+        font-size: 14px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:699px) {
+    #etc_wrap {
+        width: 100%;
+        padding: 0 5px;
+        margin-bottom: 30px;
+    }
+
+    #etc_wrap h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .etc_list li {
+        float: left;
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    .etc_list li:nth-child(1),
+    .etc_list li:nth-child(3),
+    .etc_list li:nth-child(5) {
+        margin-right: 2%;
+    }
+
+    .etc_list li a p {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        height: 40px;
+        text-align: center;
+        font-size: 9px;
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO WORLD</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="index/favicon.jpg" sizes="32*32" type="image/png">
+    <!--css-->
+    <link rel="stylesheet" href="css/sub_ticket_style.css">
+    <!--기본js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--header js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/motion.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--내가만든js-->
+    <script src="js/sub_script.js"></script>
+</head>
+
+<body>
+    <!--반응형 header-->
+    <div class="header">
+        <div class="menu_btn">
+            <a href="javascript:return false;">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+">
+            </a>
+        </div>
+        <div class="world_btn">
+            <a href="javascript:return false;">
+                <img src="/index/world.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="menu_bg"></div>
+    <div class="sidebar_menu">
+        <div class="close_btn"><a href="javascript:return false;">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuOTU0IDIxLjAzbC05LjE4NC05LjA5NSA5LjA5Mi05LjE3NC0yLjgzMi0yLjgwNy05LjA5IDkuMTc5LTkuMTc2LTkuMDg4LTIuODEgMi44MSA5LjE4NiA5LjEwNS05LjA5NSA5LjE4NCAyLjgxIDIuODEgOS4xMTItOS4xOTIgOS4xOCA5LjF6Ii8+PC9zdmc+">
+            </a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="menu_logo"><a href="index.html"><img src="index/logo.png" alt=""></a></li>
+            <li><a href="sub_about.html">ABOUT</a></li>
+            <li class="sub_menu"><a href="javascript:return false;">어트랙션/테마</a>
+                <ul>
+                    <!--첫번째 테마-->
+                    <li>
+                        <a href="sub_theme.html">
+                            <img src="/index/white.png" alt="">
+                            ECLIPSE
+                        </a>
+                    </li>
+                    <!--두번째 테마-->
+                    <li>
+                        <a href="sub_theme1.html">
+                            <img src="/index/white.png" alt="">
+                            ZERO SUM
+                        </a>
+                    </li>
+                    <!--세번째 테마-->
+                    <li>
+                        <a href="sub_theme2.html">
+                            <img src="/index/white.png" alt="">
+                            GROUND ZERO : PARALLEL WORLD
+                        </a>
+                    </li>
+                    <!--네번째 테마-->
+                    <li>
+                        <a href="sub_theme3.html">
+                            <img src="/index/white.png" alt="">
+                            MERMAID PRINCE
+                        </a>
+                    </li>
+                    <!--다섯번째 테마-->
+                    <li>
+                        <a href="sub_theme5.html">
+                            <img src="/index/white.png" alt="">
+                            SHERLOCK HOLMES
+                        </a>
+                    </li>
+                    <!--여섯번째 테마-->
+                    <li>
+                        <a href="sub_theme6.html">
+                            <img src="/index/white.png" alt="">
+                            DETECTIVE CONAN
+                        </a>
+                    </li>
+                    <!--일곱번째 테마-->
+                    <li>
+                        <a href="sub_theme4.html">
+                            <img src="/index/white.png" alt="">
+                            SNOWMAN
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="sub_goods.html">GOODS</a></li>
+            <li><a href="sub_ticket.html">TICKET</a></li>
+        </ul>
+    </div>
+    <!--반응형 header 끝-->
+    <!--side slide-->
+    <div id="slide_wrap">
+        <div class="flip">
+            T
+            <br>I
+            <br>C
+            <br>K
+            <br>E
+            <br>T
+        </div>
+        <div class="panel">
+            <ul>
+                <li>
+                    <a href="#container2">
+                        BASIC
+                        <br>TICKET
+                    </a>
+                </li>
+                <li>
+                    <a href="#container3">
+                        BIRTHDAY
+                        <br>TICKET
+                    </a>
+                </li>
+                <li>
+                    <a href="#container4">
+                        ANNUAL
+                        <br>TICKET
+                    </a>
+                </li>
+                <li>
+                    <a href="#container5">
+                        EXPRESS
+                        <br>TICKET
+                    </a>
+                </li>
+                <li>
+                    <a href="#container1">
+                        EVENT
+                        <br>TICKET
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('.panel').hide();
+            $('.flip').click(function () {
+                $('.panel').animate({ width: "toggle" }, 350);
+            });
+        });
+    </script>
+    <!--side slide 끝-->
+    <!--ticket_Booth-->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="sub_event_01.html">
+                    <img src="sub/sub_ticket/01_conan_banner.jpg" alt="">
+                    <div class="banner_name">
+                        <p>명탐정 코난 프리미어 이벤트 2023</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="sub_event_05.html">
+                    <img src="sub/sub_ticket/05_dragon_banner.jpg" alt="">
+                    <div class="banner_name">
+                        <p>드래곤볼 프리미어 이벤트 2023</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!--티켓 리스트-->
+    <div id="section1">
+        <h2>현재 판매중인 티켓</h2>
+        <ul>
+            <li>
+                <a href="#container2">
+                    BASIC
+                    <br>TICKET
+                </a>
+            </li>
+            <li>
+                <a href="#container3">
+                    BIRTHDAY
+                    <br>TICKET
+                </a>
+            </li>
+            <li>
+                <a href="#container4">
+                    ANNUAL
+                    <br>TICKET
+                </a>
+            </li>
+            <li>
+                <a href="#container5">
+                    EXPRESS
+                    <br>TICKET
+                </a>
+            </li>
+            <li>
+                <a href="#container1">
+                    EVENT
+                    <br>TICKET
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--기본티켓-->
+    <div id="container2">
+        <h2>BASIC TICKET</h2>
+        <ul>
+            <!--첫번째 티켓-->
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/1_basic.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>1DAY 스튜디오 패스
+                    </h3>
+                    <p>
+                        아침부터 저녁까지 하루 종일 파크를 즐길 수 있습니다. <br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <!--두번째 티켓-->
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/1_basic_twilight.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>1.5DAY 스튜디오 패스
+                    </h3>
+                    <p>
+                        1일째는 14시부터, 2일째는 오픈부터 입장할 수 있습니다.<br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <!--세번째 티켓-->
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/1_basic.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>2DAY 스튜디오 패스
+                    </h3>
+                    <p>
+                        연속하여 2일간, 하루 종일 파크를 즐길 수 있습니다.<br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <!--네번째 티켓-->
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/1_basic_twilight.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>트와일라잇 패스
+                    </h3>
+                    <p>
+                        14시부터 파크 종료까지 즐길 수 있습니다.<br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <!--다섯번째 티켓-->
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/1_basic.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>1DAY 장애인용 할인 패스
+                    </h3>
+                    <p>
+                        파크 지정 장애인 수첩을 가지고 계신분<br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <!--여섯번째 티켓-->
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/12_ev_night.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>NIGHT TOUR 입장 티켓
+                    </h3>
+                    <p>
+                        17시 입장하여 22시까지 즐길 수 있습니다.<br>
+                        <span>※야간 입장 전용(이벤트 전용)</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--conatiner2 기본권 끝-->
+    <!--container3 birthday-->
+    <div id="container3">
+        <h2>BIRTHDAY TICKET</h2>
+        <ul>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/2_birth.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>BIRTHDAY 1DAY 패스
+                    </h3>
+                    <p>
+                        <i>제로 스튜디오 회원(등록 무료)한정</i>
+                        <br>회원 본인 및 등록된 가족의 탄생월과 그 다음 2개월간은 생일패스로 입장이 가능합니다!
+                        <br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/2_birth.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>BIRTHDAY 2DAY 패스
+                    </h3>
+                    <p>
+                        <i>제로 스튜디오 회원(등록 무료)한정</i>
+                        <br>회원 본인 및 등록된 가족의 탄생월과 그 다음 2개월간은 생일패스로 입장이 가능합니다!<br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--container3 birthday ticket 끝-->
+    <!--container4 연간권-->
+    <div id="container4">
+        <h2>ANNUAL TICKET</h2>
+        <ul>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/3_year_s.jpg" alt="">
+                </div>
+                <div class="ticket_b annual_b">
+                    <h3>제로월드 프리미엄 연간 패스<br>
+                        <span class="bold">
+                            STANDARD
+                        </span>
+                    </h3>
+                    <p class="icon_b">
+                        ⓘ 제외일 있음
+                    </p>
+                    <p>
+                        제로월드의 즐거움을 1년동안 즐겨보세요! <br> [제로월드 프리미엄 연간 패스 스탠다드]가 완전히 새롭게 등장했어요! 연간 패스로 다채로운 특전을 누려보세요.
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/3_year_i.jpg" alt="">
+                </div>
+                <div class="ticket_b annual_b">
+                    <h3>제로월드 프리미엄 연간 패스<br>
+                        <span class="bold">
+                            IMPERIAL
+                        </span>
+                    </h3>
+                    <p class="icon_b">
+                        ⓘ 제외일 없음
+                    </p>
+                    <p>
+                        제로월드의 즐거움을 1년동안 즐겨보세요! <br> [제로월드 프리미엄 연간 패스 임페리얼]이 완전히 새롭게 등장했어요! 연간 패스로 다채로운 특전을 누려보세요.
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--container4 annual ticket 끝-->
+    <!--container5 익스프레스-->
+    <div id="container5">
+        <h2>EXPRESS TICKET</h2>
+        <ul>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/4_express.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>ZERO WORLD EXPRESS 3
+                    </h3>
+                    <a class="link_th" href="sub_theme.html">
+                        ⓘ 테마 확인하기
+                    </a>
+                    <p>
+                        [ECLIPSE], [ZERO SUM], [GROUND ZERO], [MERMAID PRINCE], [SHERLOCK HOLMES], [SNOWMAN] 테마 중 이용
+                        가능<br>
+                        대기시간을 단축하여 3개의 어트랙션을 즐겨보세요.
+                        <br>
+                        <i>당일 한정 수량이 모두 소진되면 판매를 종료합니다.</i><br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/4_express.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>ZERO WORLD EXPRESS 5
+                    </h3>
+                    <a class="link_th" href="sub_theme.html">
+                        ⓘ 테마 확인하기
+                    </a>
+                    <p>
+                        [ECLIPSE], [ZERO SUM], [GROUND ZERO], [MERMAID PRINCE], [SHERLOCK HOLMES], [SNOWMAN] 테마 중 이용
+                        가능<br>
+                        대기시간을 단축하여 5개의 어트랙션을 즐겨보세요.
+                        <br>
+                        <i>당일 한정 수량이 모두 소진되면 판매를 종료합니다.</i><br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="ticket_a">
+                    <img src="sub/sub_ticket/5_aqua.jpg" alt="">
+                </div>
+                <div class="ticket_b">
+                    <h3>OCEAN AREA 아쿠아리움&nbsp;&nbsp;&nbsp;
+                    </h3>
+                    <a class="link_th" href="sub_theme.html">
+                        ⓘ 테마 확인하기
+                    </a>
+                    <p>
+                        OCEAN AREA의 [MERMAIND PRINCE] 테마에 포함되어 있는 아쿠아리움을 입장하기 위한 티켓입니다.<br>
+                        익스프레스를 구매하시면 별도의 티켓 구매 없이 테마 이용이 가능합니다.
+                        <br>
+                        <i>당일 한정 수량이 모두 소진되면 판매를 종료합니다.</i><br>
+                        <span>※입장일에 따라 가격이 다릅니다.</span>
+                    </p>
+                </div>
+                <div class="ticket_now">
+                    <a href="javascript:return false;">
+                        지금 구매
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--container5 익스프레스 끝-->
+
+    <!--이벤트 sticky 코난, 드래곤볼-->
+    <div class="event_title">
+        <h2>EVENT TICKET</h2>
+    </div>
+    <div id="container1">
+        <div class="contents">
+            <ul class="ticket_name">
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/6_ev_train.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>명탐정 코난 인 환상열차
+                            <br>~ 월하의 심장 ~
+                        </h3>
+                        <p>
+                            다가오는 타임 리미트. 환상열차에서 벌어진 일들과 기차역 내부에 남겨진 단서들을 모아 코난과 함께 변장한 괴도 키드와 사라진 '인어의 심장'을 찾아내자!
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_02.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--두번째 티켓-->
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/7_ev_restr.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>명탐정 코난 레스토랑
+                            <br>~ 벚꽃 핀 경찰학교 ~
+                        </h3>
+                        <p>
+                            식사를 하러 온 레스토랑에 폭탄이?! 폭탄이 설치된 레스토랑에 갇힌 당신과 경찰학교 학생들. 제한 시간이 다 되기 전에 폭탄을 찾아서 제거하고 탈출해보자!
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_04.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--세번째 티켓-->
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/8_ev_dragon.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>드래곤볼 미니 미션
+                            <br>~ 천하제일 무술대회 ~
+                        </h3>
+                        <p>
+                            무도회 이틀 전. 손오공의 짐가방이 사라졌다! 천하제일 무술대회의 예선전에 오공이 무사히 참가할 수 있도록 모두들 힘을 모아서 오공의 소지품을 찾아주자.
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_06.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="aside">
+            <!--box1 event1-->
+            <div class="box1 box">
+                <h2>명탐정 코난 월드</h2>
+                <img src="sub/sub_ticket/300200/01_conan.jpg" alt="">
+                <div class="event_detail">
+                    <p>3 2 1 ZERO! 진실은 언제나 하나! <br> 기간 한정으로 진행되는 명탐정 코난에 대한 모든 이벤트들을 확인해보세요!</p>
+                    <a href="sub_event_01.html">자세히 보기</a>
+                </div>
+            </div>
+            <!--box2 event2-->
+            <div class="box2 box">
+                <h2>명탐정 코난 인 환상열차</h2>
+                <img src="sub/sub_ticket/300200/02_conan.jpg" alt="">
+                <div class="event_detail">
+                    <p>SEE YOU NEXT ILLUSION<br>
+                        궤도를 도는 기차인 환상열차 내에서 벌어진 괴도 키드의 환상과 같은 마법. 그리고 사라져버린 '인어의 심장'. 코난을 도와 괴도 키드와 보석을 찾아내자!
+                    </p>
+                    <a href="sub_event_02.html">자세히 보기</a>
+                </div>
+            </div>
+            <div class="box3 box">
+                <h2>명탐정 코난 레스토랑</h2>
+                <img src="sub/sub_ticket/300200/04_conan.jpg" alt="">
+                <div class="event_detail">
+                    <p>식사를 위해 찾은 레스토랑에 폭탄이! 제한 시간 내에 폭탄을 찾아서 제거해야해! 그런데 저 허술해 보이는 경찰학교 학생들...믿어도 되는 걸까?</p>
+                    <a href="sub_event_04.html">자세히 보기</a>
+                </div>
+            </div>
+            <div class="box4 box">
+                <h2>드래곤볼 월드</h2>
+                <img src="sub/sub_ticket/300200/05_dragonball.jpg" alt="">
+                <div class="event_detail">
+                    <p>자 소원을 말해라! <br> 기간 한정으로 진행되는 드래곤볼에 대한 모든 이벤트들을 확인해보세요!</p>
+                    <a href="sub_event_05.html">자세히 보기</a>
+                </div>
+            </div>
+            <div class="box5 box">
+                <h2>드래곤볼 미니 미션</h2>
+                <img src="sub/sub_ticket/300200/06_dragonball.jpg" alt="">
+                <div class="event_detail">
+                    <p>안녕! 나야 손오공!<br>무도회 이틀 전. 손오공은 자신의 짐가방이 사라진 것을 발견하는데?! 파크 곳곳에서 미니 미션들을 성공하고 아이템을 모아 오공의 소지품을 찾아주자!
+                    </p>
+                    <a href="sub_event_06.html">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--container1 코난 드래곤볼 이벤트 끝-->
+    <!--이벤트 sticky 봄 이벤트-->
+    <div id="container1">
+        <div class="contents contents1">
+            <ul class="ticket_name">
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/10_ev_stu.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>ZERO BLOSSOM
+                            <br>STUDENT 1.5일권 패스
+                        </h3>
+                        <p>
+                            학생 한정, 1일째는 13시부터 입장하고 2일째는 파크 오픈부터 입장할 수 있는 가성비 넘치는 패스!
+                            <br>ⓘ 학생증 또는 증명서를 구입시에 제출(업로드) 할 수 있어야합니다.
+                            <br>ⓘ 파크에 입장하기 전 입장권과 함께 본인 확인을 진행하고 있습니다.
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_09.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--두번째 티켓-->
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/10_ev_adult.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>ZERO BLOSSOM
+                            <br>ADULT 1.5일권 패스
+                        </h3>
+                        <p>
+                            성인 한정, 교복을 입고 제로월드에 오면 1일권 가격으로 2일을 즐길 수 있어! 맥주잔에 콜라를 무료로!
+                            <br>ⓘ 주민증 또는 증명서를 구입시에 제출(업로드) 할 수 있어야합니다.
+                            <br>ⓘ 파크에 입장하기 전 입장권과 함께 본인 확인을 진행하고 있습니다.
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_09.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--세번째 티켓-->
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/10_ev_live.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>ZERO BLOSSOM
+                            <br>FULL BLOOM LIVE
+                        </h3>
+                        <p>
+                            봄의 추억을 더욱 완벽하게 만들어줄 제로월드의 스폐셜 라이브! 나의 봄을 빛낼 완벽한 음악을 찾아서!
+                            <br>ⓘ 4월 15일, 16일, 22일, 23일. 4일에 걸쳐 진행되는 이벤트 입니다.
+                            <br>ⓘ 사정에 따라 아티스트와 개최일은 변경되는 경우가 있습니다.
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_09.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="aside">
+            <!--box1 event1-->
+            <div class="box1 box">
+                <h2>ZERO BLOSSOM 2023</h2>
+                <img src="sub/sub_ticket/300200/09_spring.png" alt="">
+                <div class="event_detail">
+                    <p>ZERO BLOSSOM FULL BLOOM<br> 함께하는 이 순간 우린 만개하였다. 언제나 이 순간만을 기다리고 있었어. 마스크 아래 감춰져왔던 너의 웃음을 보고싶어</p>
+                    <a href="sub_event_01.html">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--container1 봄 이벤트 끝-->
+    <!--이벤트 sticky 서커스 좀비 나이트투어-->
+    <div id="container1">
+        <div class="contents">
+            <ul class="ticket_name">
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/9_ev_circus.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>ESCAPE THE CIRCUS
+                            <br>ECLIPSE NIGHT CIRCUS
+                        </h3>
+                        <p>
+                            파크 내에 위치한 거대 서커스단 <br> 그곳에서 생체 실험이 진행되고 있다는 소문을 들은 당신은 잠입 수사관이 되어 몰래 서커스단에 숨어든다.
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_08.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--두번째 티켓-->
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/11_ev_zombie.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>PARALLEL WORLD
+                            <br>PATIENT ZERO
+                        </h3>
+                        <p>
+                            수상한 거래 현장을 목격한 당신은 몰래 숨어 현장을 지켜보다 누군가에게 습격을 당한다. 눈을 떠보니 여긴 제로월드! 기묘한 소리에 밖을 보니 저건 좀비...?
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_11.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!--세번째 티켓-->
+                <li>
+                    <div class="ticket_img">
+                        <img src="sub/sub_ticket/12_ev_rest.jpg" alt="">
+                    </div>
+                    <div class="ticket_detail">
+                        <p>기간 한정</p>
+                        <h3>A MIDSUMMER NIGHT'S
+                            <br> DREAM RESTAURANT
+                        </h3>
+                        <p>
+                            ZERO SUM AREA의 통유리로 제작된 우주정거장 레스토랑에서 즐기는 분위기있는 디너! 테마파크의 야경과 '빛'테마로 꾸며진 레스토랑 내부를 즐겨보세요!
+                        </p>
+                        <div class="ticket_btn">
+                            <a class="detail" href="sub_event_10.html">
+                                자세히 보기
+                            </a>
+                            <a class="bought" href="javascript:return false;">
+                                지금 구매
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="aside">
+            <!--box1 event1-->
+            <div class="box1 box">
+                <h2>ECLIPSE NIGHT CIRCUS</h2>
+                <img src="sub/sub_ticket/300200/08_circus.png" alt="">
+                <div class="event_detail">
+                    <p>너 그 소문 들었어?<br>서커스단의 숨겨진 비밀을 찾는 수사에 당신을 초대합니다. 어두운 밤, 잠입 수사관이 되어 몰래 서커스단에 숨어든 당신은 소문의 진실을 알아낼 수 있을까요</p>
+                    <a href="sub_event_08.html">자세히 보기</a>
+                </div>
+            </div>
+            <!--box2 event2-->
+            <div class="box2 box">
+                <h2>PARALLEL WORLD <br>PATIENT ZERO</h2>
+                <img src="sub/sub_ticket/300200/11_zombie.png" alt="">
+                <div class="event_detail">
+                    <p>SURVIVAL IN ZERO WORLD<br>
+                        좀비 바이러스가 퍼진 테마파크에서 GROUND ZERO AREA내 유일한 안전지대에 갇힌 당신. AREA내에 숨겨져있는 힌트들을 조합해 최초 감염자를 찾아내자!
+                    </p>
+                    <a href="sub_event_11.html">자세히 보기</a>
+                </div>
+            </div>
+            <div class="box3 box">
+                <h2>A MIDSUMMER NIGHT'S DREAM</h2>
+                <img src="sub/sub_ticket/300200/10_night.png" alt="">
+                <div class="event_detail">
+                    <p>우리의 밤은 당신의 낮보다 아름답다 <br>
+                    무더운 여름밤을 시원하게 해줄 워터쇼부터 낮의 퍼레이드와는 또 다른 매력의 빛으로 둘러싸인 야간 퍼레이드, 그리고 여름밤 축제의 하이라이트 불꽃축제까지 즐길 수 있는 FESTIVAL EVENT.<br>ZERO SUM AREA의 통유리로 제작된 우주정거장 레스토랑에서 즐기는 분위기 있는 디너! <br> 무더운 여름 사라졌던 눈사람은 빛으로 재탄생해 우리 앞에 나타났다! 눈사람이 돌아온걸 기념하기 위해서 모두들 빛으로 자신을 꾸미고 축제를 벌였다는데... TWINKLE CHARACTER에 참가해 인증샷을 남겨보자!</p>
+                    <a href="sub_event_10.html">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--container1 서커스 좀비 나이트투어 이벤트 끝-->
+    <div id="footer">
+        <p>ⓒ 2023 ZERO WORLD Co.,Ltd. All Rights Reserved.</p>
+        <p>ⓒ 2023 Studio Zero producer Eunji Kim</p>
+    </div>
+</body>
+
+</html>
