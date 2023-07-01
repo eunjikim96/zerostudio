@@ -577,7 +577,7 @@ body::-webkit-scrollbar-track {
 
     .area1 {
         font-size: 12px;
-        line-height: 21px;
+        line-height: 23px;
     }
 
     .area1 h3 {
@@ -587,7 +587,7 @@ body::-webkit-scrollbar-track {
     }
 
     .area1 table {
-        margin: 15px 0;
+        margin: 25px 0;
     }
 
     .area1 a {
@@ -686,19 +686,19 @@ body::-webkit-scrollbar-track {
 /*mobile*/
 @media (max-width:699px) {
     .area2 {
-        margin-top: 30px;
-        line-height: 21px;
+        margin-top: 50px;
+        line-height: 23px;
         font-size: 12px;
     }
 
     .area2 h3 {
         font-size: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         line-height: 30px;
     }
 
     .area2 table {
-        margin: 15px 0;
+        margin: 25px 0;
     }
 
     .area2 a {
@@ -799,7 +799,7 @@ body::-webkit-scrollbar-track {
 /*mobile*/
 @media (max-width:699px) {
     .area3 {
-        margin-top: 30px;
+        margin-top: 50px;
         line-height: 21px;
         font-size: 12px;
     }
@@ -866,7 +866,7 @@ body::-webkit-scrollbar-track {
 /*mobile*/
 @media (max-width:699px) {
     .area4 {
-        margin-top: 30px;
+        margin-top: 50px;
         line-height: 21px;
     }
 
@@ -877,6 +877,7 @@ body::-webkit-scrollbar-track {
 
     .area4 p {
         font-size: 12px;
+        line-height: 23px;
     }
 }
 
@@ -1050,7 +1051,7 @@ body::-webkit-scrollbar-track {
     }
 
     .singer {
-        margin: 15px auto;
+        margin: 25px auto;
         width: 100%;
     }
 
@@ -1070,9 +1071,8 @@ body::-webkit-scrollbar-track {
     /*라이브 지도*/
     .live_map {
         width: 100%;
-        margin: 0 auto;
+        margin: 30px auto;
         padding: 10px;
-        margin: 20px 0;
     }
 
     .live_map ul {
@@ -1171,13 +1171,13 @@ body::-webkit-scrollbar-track {
         padding-top: 10px;
     }
     .artist{
-        margin: 25px 0 20px;
+        margin: 35px 0 20px;
     }
     .list_start{
         margin-bottom: 8px;
     }
     .date_top{
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .art_list{
         width: 100%;

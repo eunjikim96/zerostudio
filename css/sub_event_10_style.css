@@ -398,7 +398,7 @@ body::-webkit-scrollbar-track {
         margin-top: 20px;
         padding: 25px 20px;
         font-size: 12px;
-        line-height: 21px;
+        line-height: 23px;
     }
 
     .event_story h2 {
@@ -549,7 +549,7 @@ body::-webkit-scrollbar-track {
     }
     .area2{
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .area2 li:nth-child(1){
         width: 58%;
@@ -675,13 +675,13 @@ body::-webkit-scrollbar-track {
         padding-left: 10px;
     }
     #section3 h3{
-        font-size: 20px;
-        margin-top: 15px;
+        font-size: 18px;
+        margin-top: 20px;
     }
     .area4{
         margin: 15px 0;
         font-size: 12px;
-        line-height: 21px;
+        line-height: 23px;
     }
     .area4 li{
         padding-bottom: 20px;
@@ -697,18 +697,13 @@ body::-webkit-scrollbar-track {
 
 /*티켓판매정보*/
 .ticket_wrap{
-    width: 70%;
     margin: 0 auto;
     border: 3px solid #fcc816;
     border-radius: 10px;
-    padding: 30px 40px;
 }
 .ticket_wrap h3{
     font-family: 'GongGothicMedium';
     margin-top: 0 !important;
-}
-.ticket_wrap p{
-    padding: 20px 0;
 }
 .ticket_wrap a{
     font-family: 'GongGothicMedium';
@@ -760,7 +755,7 @@ body::-webkit-scrollbar-track {
     .ticket_wrap{
         width: 100%;
         padding: 30px 20px;
-        margin: 10px 0 20px;
+        margin: 25px 0 30px;
     }
     .ticket_wrap h3{
         font-size: 20px;
@@ -828,7 +823,7 @@ body::-webkit-scrollbar-track {
     }
     #section6 p{
         font-size: 12px;
-        line-height: 21px;
+        line-height: 23px;
     }
 }
 
